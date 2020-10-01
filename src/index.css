@@ -11,3 +11,185 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.welcomeImg1{
+  position: absolute;
+  width: 80%;
+  height: 55%;
+  left: 20%;
+  bottom: 0%;
+  border-radius: 15px;
+}
+
+.welcomeImg2{
+  position: absolute;
+  top: 0%;
+  width: 50%;
+  height: 50%;
+}
+
+.swimDiv{
+  opacity: 40%;
+}
+.swimDiv:hover{
+  opacity: 100%;
+}
+
+.codeDiv{
+  opacity: 50%;
+}
+.codeDiv:hover{
+  opacity: 100%;
+}
+
+.welcomePictures{
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.name{
+  font-size: 25px;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  position: absolute;
+  left: 60%;
+  top: 5%;
+}
+
+.passion1{
+  font-size: 25px;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  position: absolute;
+  left: 63%;
+  top: 10%
+}
+
+.passion2{
+  font-size: 25px;
+  left: 3.2%;
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  top: 55%;
+}
+
+.passion2a{
+  font-size: 25px;
+  left: 3.8%;
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  top: 61%;
+}
+
+.passion2b{  
+  font-size: 25px;
+  left: 0.8%;
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  top: 67%;
+}
+
+.profPic{
+  position: absolute;
+  height: 175px;
+  width: 175px;
+  border-radius: 100%;
+  left: 65%;
+  top: 20%;
+}
+
+.click{
+  font-size: 30px;
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  left: 80%;
+  top: 22%;
+}
+
+.click1{
+  font-size: 30px;
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bold;
+  left: 80%;
+  top: 28%;
+}
+
+.logoPic{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+.background{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 90%;
+}
+
+.block1title{
+  position: relative;
+  font-family: 'Audiowide', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  top: 10px;
+  left: 5px;
+  color: rgb(250, 220, 182);
+}
+
+.block1{
+  position: relative;
+  font-family: 'Audiowide', sans-serif;
+  color: aliceblue;
+  top: 10px;
+  left: 1%;
+  font-size: 23px;
+}
+
+.block2title{
+  position: relative;
+  font-family: 'Audiowide', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  top: 25px;
+  right: 25px;
+  text-align: right;
+  color: rgb(250, 220, 182);
+}
+
+.block2{
+  position: relative;
+  font-family: 'Audiowide', sans-serif;
+  color: rgb(240, 138, 22);
+  top: 30px;
+  left: 31%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.projectPic{
+  position: relative;
+  height: 290px;
+  width: 475px;
+  left: 33%;
+  top: 50px;
+  border-radius: 5%;
+}
+
+.swimmingPic{
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: 12%;
+  border-radius: 5%;
+}
