@@ -5,7 +5,8 @@ export default class profile extends React.Component{
 
     state = {
         redirectToSwimming: false,
-        redirectToProjects: false
+        redirectToProjects: false,
+        redirectToContact: false
     }
 
     redirectFunction = () => {
@@ -13,6 +14,8 @@ export default class profile extends React.Component{
             return <Redirect to='/swimming'/>
         }else if(this.state.redirectToProjects){
             return <Redirect to='/project'/>
+        }else if(this.state.redirectToContact){
+            return <Redirect to='/contact'/>
         }
     }
 
@@ -20,6 +23,14 @@ export default class profile extends React.Component{
         if(e.target.className === 'projectPic'){
             this.setState({
                 redirectToProjects: true
+            })
+        }else if(e.target.className === 'swimmingPic'){
+            this.setState({
+                redirectToSwimming: true
+            })
+        }else if(e.target.className === 'mailPic'){
+            this.setState({
+                redirectToContact: true
             })
         }
     }
@@ -42,9 +53,21 @@ export default class profile extends React.Component{
                     So now I am looking to extend my knowledge by persuing a career within the software engineering field. 
                 </div>
                 <div className='block2title'> @ Past, Present, Future @</div>
-                <div className='block2'> Check Out my past projects! </div>
-                <img onClick={this.redirectHandler} className='projectPic' src={'/img/projectPic.png'} alt="projectPic"/>
-                <img onClick={this.redirectHandler} className='swimmingPic' src={'/img/swimmingFly.png'} alt="swimmingPic"/>
+                
+                <div className='projectDiv'>
+                    <div className='projectText'> Check Out my past projects! </div>
+                    <img onClick={this.redirectHandler} className='projectPic' src={'/img/projectPic.png'} alt="projectPic"/>
+                </div>
+
+                <div className='swimmingDiv'>
+                    <div className='swimmingText'> Check my Swim world! </div>
+                    <img onClick={this.redirectHandler} className='swimmingPic' src={'/img/swimmingFly.png'} alt="swimmingPic"/>
+                </div>
+            
+                <div className='mailDiv'>
+                    <div className='mailText'> Contact me here! </div>
+                    <img onClick={this.redirectHandler} className='mailPic' src={'/img/mailPict.png'} alt="mailPic"/>
+                </div>
 
             </div>
         )
